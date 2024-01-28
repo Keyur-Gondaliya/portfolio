@@ -1,3 +1,4 @@
+import { projectList } from "@/Constants";
 import Button from "./Components/Button";
 import ProjectCard from "./Components/ProjectCard";
 
@@ -13,16 +14,15 @@ const Projects = (props: Props) => {
         Projects
       </h2>
       <div className="flex flex-wrap gap-10 justify-evenly ">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectList.map((e, i) => (
+          <ProjectCard data={e} />
+        ))}
       </div>
-      <div className="flex justify-center relative">
-        <Button label="Show More" fullWidth="w-fit" />
-      </div>
+      {projectList.length > 6 && (
+        <div className="flex justify-center relative">
+          <Button label="Show More" fullWidth="w-fit" />
+        </div>
+      )}
     </section>
   );
 };

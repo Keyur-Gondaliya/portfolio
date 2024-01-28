@@ -58,16 +58,10 @@ const Navbar = (props: Props) => {
             </li>
           ))}
         </ul>
-
-        <div className="hidden max-lg:block">
-          <img
-            src="assets/icons/hamburger.svg"
-            alt="Menu"
-            width={25}
-            height={25}
-          />
-        </div>
       </nav>
+      <div className="hidden max-lg:block float-end">
+        <img src="hamburger.svg" alt="Menu" width={25} height={25} />
+      </div>
     </header>
   );
 };

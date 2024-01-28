@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
           />
           <p>2024 Keyur Gondaliya</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 justify-center items-center">
           <a
             href="https://www.linkedin.com/in/keyur-gondaliya/"
             target="_blank"
@@ -36,7 +36,7 @@ const Footer = (props: Props) => {
             title="twitter"
             className="cursor-pointer"
           >
-            <img src="twitter.svg" alt="twitter" width={20} height={20} />
+            <img src="twitter.svg" alt="twitter" width={22} height={22} />
           </a>
           <a
             href="https://www.reddit.com/user/AdditionalRich8339/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
