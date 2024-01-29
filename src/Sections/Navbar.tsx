@@ -59,9 +59,9 @@ const Navbar = (props: Props) => {
           ))}
         </ul>
       </nav>
-      <div className="hidden max-lg:block float-end">
+      {/* <div className="hidden max-lg:block float-end">
         <img src="hamburger.svg" alt="Menu" width={25} height={25} />
-      </div>
+      </div> */}
     </header>
   );
 };

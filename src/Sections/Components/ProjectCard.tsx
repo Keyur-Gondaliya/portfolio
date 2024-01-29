@@ -22,7 +22,7 @@ const ProjectCard = ({ data }: Props) => {
                 height="30px"
                 key={i}
                 style={{ height: "30px" }}
-                className="bg-white p-1 rounded-md"
+                className="bg-white p-[1px] rounded-md"
               />
             ))}
           </div>

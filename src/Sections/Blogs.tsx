@@ -1,3 +1,4 @@
+import { blogList } from "@/Constants";
 import BlogCard from "./Components/BlogCard";
 import ProjectCard from "./Components/ProjectCard";
 
@@ -10,10 +11,9 @@ const Blogs = (props: Props) => {
         Blogs
       </h2>
       <div className="flex flex-wrap gap-10 justify-evenly">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogList.map((e: any) => (
+          <BlogCard value={e} />
+        ))}
       </div>
     </section>
   );

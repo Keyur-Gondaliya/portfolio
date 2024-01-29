@@ -7,6 +7,7 @@ type Props = {
   borderColor?: string;
   textColor?: string;
   fullWidth?: string;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -16,6 +17,7 @@ const Button = ({
   borderColor,
   textColor,
   fullWidth,
+  onClick,
 }: Props) => {
   return (
     <button
@@ -25,6 +27,7 @@ const Button = ({
           : "bg-coral-red  text-white border-coral-red"
       } rounded-full ${fullWidth || "w-full"}
       `}
+      onClick={onClick}
     >
       {label}
       {iconUrl ? (

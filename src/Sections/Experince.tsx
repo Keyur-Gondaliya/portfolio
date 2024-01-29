@@ -13,7 +13,7 @@ const Experinces = (props: Props) => {
           Experinces
         </h2>
         <div className="flex float-start text-[#b2b2b2]">
-          <div className="w-[230px] text-lg">Mar 2022 - Present</div>
+          <div className="w-[230px] text-lg pr-[4px]">Mar 2022 - Present</div>
           <div className="flex flex-col text-slate-200 w-fit">
             <a
               href="https://technoyuga.com/"
