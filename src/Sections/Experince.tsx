@@ -41,7 +41,7 @@ const Experinces = (props: Props) => {
               discussions.
             </div>
             <div className="text-[#b2b2b2] my-2 text-justify">
-              - My expertise extends across various industries, as I've
+              - My expertise extends across various industries, as I&apos;ve
               successfully implemented MERN technologies in diverse project
               contexts. This journey reflects my ability to adapt, lead, and
               deliver results in a fast-paced and collaborative work

@@ -18,7 +18,7 @@ const AboutMe = (props: Props) => {
           world a better place.
         </p>
         <p className="mt-2 font-montserrat text-slate-200">
-          As a computer science graduate, I've dedicated myself to the field,
+          As a computer science graduate, I&apos;ve dedicated myself to the field,
           actively creating personal projects long before entering the industry.
           Despite having over couple years of professional experience, my
           journey began with a passion for technology evident in my early
@@ -26,7 +26,7 @@ const AboutMe = (props: Props) => {
           develop a proactive approach to problem-solving.
         </p>
         <p className="mt-2 font-montserrat text-slate-200">
-          Over the years, I've successfully tackled real-world problems across
+          Over the years, I&apos;ve successfully tackled real-world problems across
           various sectors, including management and inventory systems, fintech
           solutions, and real estate projects using CAD. In my current role at
           my company, I have taken on the responsibility of managing large
