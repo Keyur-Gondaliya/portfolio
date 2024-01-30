@@ -4,9 +4,14 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <section id="home" className="w-full relative pb-48 gap-10 max-container ">
+    <section id="home" className="w-full relative pb-16  gap-10 max-container ">
       <div className="absolute">
-        <img src="bg.jpg" alt="heroImage" />
+        <img
+          src="bg3.jpg"
+          alt="heroImage"
+          style={{ opacity: 0.4 }}
+          className="h-auto max-w-full "
+        />
       </div>
       <div className="pl-32 relative  flex flex-col justify-center items-start w-full max-xl:padding-x pt-60 ">
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
@@ -26,7 +31,17 @@ const HeroSection = (props: Props) => {
           Excellence.
         </p>
 
-        <Button label="Resume" iconUrl="download.svg" fullWidth="w-fit" />
+        <Button
+          label="Resume"
+          iconUrl="download.svg"
+          fullWidth="w-fit"
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/drive/folders/14jiBC7a5zM9zXU7nQ68vAu_mW_TkK2sI?usp=sharing",
+              "_blank"
+            );
+          }}
+        />
       </div>
     </section>
   );

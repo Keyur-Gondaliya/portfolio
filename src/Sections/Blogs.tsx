@@ -11,8 +11,8 @@ const Blogs = (props: Props) => {
         Blogs
       </h2>
       <div className="flex flex-wrap gap-10 justify-evenly">
-        {blogList.map((e: any) => (
-          <BlogCard value={e} />
+        {blogList.map((e: any, i: number) => (
+          <BlogCard value={e} key={i} />
         ))}
       </div>
     </section>

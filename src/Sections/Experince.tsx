@@ -48,8 +48,8 @@ const Experinces = (props: Props) => {
               environment.
             </div>
             <div className="flex flex-wrap">
-              {tySkillList.map((e: any) => (
-                <SkillTag value={e} />
+              {tySkillList.map((e: any, i: number) => (
+                <SkillTag value={e} key={i} />
               ))}
             </div>
           </div>
@@ -73,8 +73,8 @@ const Experinces = (props: Props) => {
               chatbot using Botman in the backend.
             </div>
             <div className="flex flex-wrap">
-              {internSkillList.map((e: any) => (
-                <SkillTag value={e} />
+              {internSkillList.map((e: any, i: number) => (
+                <SkillTag value={e} key={i} />
               ))}
             </div>
           </div>

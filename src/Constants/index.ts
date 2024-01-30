@@ -76,6 +76,7 @@ export const projectList = [
       { link: "stack/arcsite.jpeg", alt: "arcsite" },
     ],
     tags: ["CAD", "Real Estate"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/realestatepro360/",
   },
   {
     name: "PerformancePilot",
@@ -92,6 +93,7 @@ export const projectList = [
       { link: "stack/stripe.svg", alt: "stripe" },
     ],
     tags: ["Resturents"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/performancepilot/",
   },
   {
     name: "CrossPay",
@@ -109,6 +111,7 @@ export const projectList = [
       { link: "stack/flutterwave.png", alt: "flutterwave" },
     ],
     tags: ["Fintech"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/crosspay/",
   },
 
   {
@@ -127,6 +130,7 @@ export const projectList = [
       { link: "stack/webrtc.png", alt: "webrtc" },
     ],
     tags: ["CommunicationTechnology"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/duosync-call/",
   },
   {
     name: "Resume Builder",
@@ -143,6 +147,7 @@ export const projectList = [
       { link: "stack/pdf.png", alt: "pdf" },
     ],
     tags: ["Career Services"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/resume-builder/",
   },
   {
     name: "DataMagnet",
@@ -159,6 +164,7 @@ export const projectList = [
       { link: "stack/threejs.svg", alt: "threejs" },
     ],
     tags: ["Industrial"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/datamagnet/",
   },
   {
     name: "FlexiSync Inventory",
@@ -170,6 +176,7 @@ export const projectList = [
       { link: "stack/js.svg", alt: "js" },
     ],
     tags: ["Inventory"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/flexisync-inventory/",
   },
   {
     name: "ChefSync Pro",
@@ -186,6 +193,7 @@ export const projectList = [
       { link: "stack/stripe.svg", alt: "stripe" },
     ],
     tags: ["Career Services"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/chefsync-pro/",
   },
   {
     name: "PolySnap PDF",
@@ -197,6 +205,7 @@ export const projectList = [
       { link: "stack/js.svg", alt: "js" },
     ],
     tags: ["SVG", "Geometry", "pdf"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/polysnap-pdf/",
   },
   {
     name: "NPM-3D-Sun",
@@ -209,6 +218,7 @@ export const projectList = [
       { link: "stack/threejs.svg", alt: "threejs" },
     ],
     tags: ["npm"],
+    link: "https://www.npmjs.com/package/@keyur-gondaliya/3d-sun",
   },
   {
     name: "Nike-Branding",
@@ -221,6 +231,7 @@ export const projectList = [
       { link: "stack/tailwind.png", alt: "tailwind" },
     ],
     tags: ["LandingPage", "selfLearning"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/nike-branding/",
   },
   {
     name: "Admin Analytics",
@@ -236,6 +247,7 @@ export const projectList = [
       { link: "stack/aws.svg", alt: "aws" },
     ],
     tags: ["Admins"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/admin-analytics/",
   },
   {
     name: "Quiz Master",
@@ -250,6 +262,7 @@ export const projectList = [
       { link: "stack/js.svg", alt: "js" },
     ],
     tags: ["E-Education"],
+    link: "https://wordpress.com/post/gkcodes.wordpress.com/305",
   },
   {
     name: "Electricity Billing System",
@@ -265,6 +278,7 @@ export const projectList = [
       { link: "stack/json.webp", alt: "json" },
     ],
     tags: ["Industry"],
+    link: "https://wordpress.com/post/gkcodes.wordpress.com/190",
   },
   {
     name: "Resturant Reservation",
@@ -277,6 +291,7 @@ export const projectList = [
       { link: "stack/js.svg", alt: "js" },
     ],
     tags: ["Resturant"],
+    link: "https://wordpress.com/post/gkcodes.wordpress.com/270",
   },
   {
     name: "Timetable Maker",
@@ -288,6 +303,7 @@ export const projectList = [
       { link: "stack/excel.jpeg", alt: "excel" },
     ],
     tags: ["Scheduler"],
+    link: "https://wordpress.com/post/gkcodes.wordpress.com/183",
   },
   {
     name: "Data Hiding",
@@ -296,6 +312,7 @@ export const projectList = [
     des: "Steganography as a Service ensures covert data hiding in images, preserving confidentiality.it embeds information within images, enhancing security through discreet communication channels.",
     stack: [{ link: "stack/python.png", alt: "python" }],
     tags: ["dataHiding"],
+    link: "https://gkcodes.wordpress.com/2024/01/30/data-hiding-steganography/",
   },
   {
     name: "Botman",
@@ -307,6 +324,7 @@ export const projectList = [
       { link: "stack/node.svg", alt: "php" },
     ],
     tags: ["Bot"],
+    link: "https://wordpress.com/post/gkcodes.wordpress.com/229",
   },
 ];
 
@@ -322,7 +340,7 @@ export const blogList = [
     link: "https://gkcodes.wordpress.com/2024/01/30/containerization/",
     name: "Containerization (Docker + k8s)",
     time: 4,
-    des: "Efficiency sealed, innovation unleashed, boundaries shattered.",
+    des: "Elfficiency sealed, innovation unleashed, boundaries shattered.",
     date: "Jan 01, 2024",
   },
   {

@@ -16,8 +16,8 @@ const Projects = (props: Props) => {
         Projects
       </h2>
       <div className="flex flex-wrap gap-10 justify-evenly ">
-        {list.map((e: any) => (
-          <ProjectCard data={e} />
+        {list.map((e: any, i: number) => (
+          <ProjectCard data={e} key={i} />
         ))}
       </div>
       {list.length / 6 < 3 ? (

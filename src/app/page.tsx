@@ -18,7 +18,7 @@ export default function Home() {
       <section className="xl:padding-l wide:padding-r padding-b bg-[#1B1B1B]">
         <HeroSection />
       </section>
-      <section className="padding-x pb-10  bg-[#1B1B1B]">
+      <section className="padding-x pb-10 pt-1  bg-[#1B1B1B]">
         <AboutMe />
       </section>
       <section className="padding-x py-10  bg-[#1B1B1B]">

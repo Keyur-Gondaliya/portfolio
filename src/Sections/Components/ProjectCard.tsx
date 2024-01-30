@@ -4,7 +4,12 @@ type Props = { data: any };
 
 const ProjectCard = ({ data }: Props) => {
   return (
-    <div className="max-w-sm  rounded-lg shadow border border-[#2d2d2d] bg-[#1c1c1c] cursor-pointer transition ease-in-out delay-150 hover:border-[1px] hover:border-[rgba(255,255,255,0.2)]">
+    <div
+      onClick={() => {
+        window.open(data.link, "_blank");
+      }}
+      className="max-w-sm  rounded-lg shadow border border-[#2d2d2d] bg-[#1c1c1c] cursor-pointer transition ease-in-out delay-150 hover:border-[1px] hover:border-[rgba(255,255,255,0.2)]"
+    >
       <div className="relative">
         <img
           className="rounded-t-lg "
@@ -43,8 +48,8 @@ const ProjectCard = ({ data }: Props) => {
         </h5>
         <p className="mb-3 font-normal text-[#b2b2b2] ">{data.des}</p>
         <div className="flex gap-3">
-          {data.tags.map((e: any) => (
-            <p className="text-coral-red font-bold">
+          {data.tags.map((e: any, i: number) => (
+            <p className="text-coral-red font-bold" key={i}>
               <span className=" text-white-400">#</span>
               {e}
             </p>

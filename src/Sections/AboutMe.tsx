@@ -9,13 +9,13 @@ const AboutMe = (props: Props) => {
           <span className="text-coral-red">Me</span>
         </h2>
         <p className="mt-2 font-montserrat text-slate-200">
-          Believer in the mantra "The only time success comes before work is in
-          the dictionary," I am Keyur Gondaliya. My profound interest in
-          computers dates back to my early years, and I vividly recall writing
-          my first HTML code in the 9th grade. The mesmerizing "marquee" tag
-          left a lasting impression on me, leading me to decide to pursue a
-          career in technology and contribute to making the world a better
-          place.
+          Believer in the mantra &quot;The only time success comes before work
+          is in the dictionary,&quot; I am Keyur Gondaliya. My profound interest
+          in computers dates back to my early years, and I vividly recall
+          writing my first HTML code in the 9th grade. The mesmerizing
+          &quot;marquee&quot; tag left a lasting impression on me, leading me to
+          decide to pursue a career in technology and contribute to making the
+          world a better place.
         </p>
         <p className="mt-2 font-montserrat text-slate-200">
           As a computer science graduate, I've dedicated myself to the field,
