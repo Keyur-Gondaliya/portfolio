@@ -7,7 +7,7 @@ function BlogCard({ value }: Props) {
     <a
       href={value.link}
       target="_blank"
-      className="relative flex flex-col gap-10 border border-[#2d2d2d] rounded-[5px] p-[20px] bg-[#1c1c1c]  cursor-pointer transition ease-in-out delay-150 hover:border-[1px] hover:border-[rgba(255,255,255,0.2)] w-[48%]"
+      className="relative flex flex-col gap-10 border border-[#2d2d2d] rounded-[5px] p-[20px] bg-[#1c1c1c]  cursor-pointer transition ease-in-out delay-150 hover:border-[1px] hover:border-[rgba(255,255,255,0.2)] lg:w-[48%] w-full"
     >
       <div className="blog-card-gardient" />
       <div className="text-white text-lg">{value.name}</div>

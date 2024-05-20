@@ -1,4 +1,4 @@
-import { internSkillList, tySkillList } from "@/Constants";
+import { coFounderSkillList, internSkillList, tySkillList } from "@/Constants";
 
 type Props = {};
 
@@ -13,7 +13,7 @@ const Experinces = (props: Props) => {
           Experinces
         </h2>
         <div className="flex float-start text-[#b2b2b2]">
-          <div className="w-[230px] text-lg pr-[4px]">Mar 2022 - Present</div>
+          <div className="w-[230px] text-lg pr-[4px]">Mar 2022 - Feb-2024</div>
           <div className="flex flex-col text-slate-200 w-fit">
             <a
               href="https://technoyuga.com/"
@@ -55,14 +55,37 @@ const Experinces = (props: Props) => {
           </div>
         </div>
         <div className="flex float-start text-[#b2b2b2]">
-          <div className="w-[230px] text-lg">Jun 2021 - Aug 2021</div>
+          <div className="w-[230px] text-lg">Sep 2020 - Feb 2022</div>
           <div className="flex flex-col text-slate-200 w-fit">
             <a
               href="https://infikeytech.com/"
               target="_blank"
               className="cursor-pointer underline relative text-lg"
             >
-              Infikey Technologies Private Limited - Web Developer Intern
+              Buyerz - Co-Founder Full-stack Developer
+            </a>
+            <div className="text-[#b2b2b2]  my-2 text-justify">
+              - Co-founded and handled all the technical aspects for crunchbase
+              like data filtering platform where optimizing search time for
+              querying from millions of records.
+            </div>
+            <div className="flex flex-wrap">
+              {coFounderSkillList.map((e: any, i: number) => (
+                <SkillTag value={e} key={i} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="flex float-start text-[#b2b2b2]">
+          <div className="w-[230px] text-lg">Feb 2021 & June 2021</div>
+          <div className="flex flex-col text-slate-200 w-fit">
+            <a
+              href="https://infikeytech.com/"
+              target="_blank"
+              className="cursor-pointer underline relative text-lg"
+            >
+              Infikey Technologies & TwoWaits Private Limited - Web Developer
+              Intern
             </a>
             <div className="text-[#b2b2b2]  my-2 text-justify">
               - During my internship, I honed my skills in MERN (MongoDB,

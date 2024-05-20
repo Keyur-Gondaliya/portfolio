@@ -20,6 +20,7 @@ export const skillList = [
   "tailwind",
   "MUI",
   "Typescript",
+  "nestjs",
   "mysql",
   "firebase",
   "monorepo",
@@ -48,7 +49,15 @@ export const internSkillList = [
   "Laravel",
   "Fundamentals of Web Development",
 ];
-
+export const coFounderSkillList = [
+  "React",
+  "Node",
+  "Mongodb",
+  "CSS",
+  "Express",
+  "AWS",
+  "Paytm",
+];
 export const tySkillList = [
   "MERN",
   "R&D",
@@ -113,7 +122,23 @@ export const projectList = [
     tags: ["Fintech"],
     link: "https://gkcodes.wordpress.com/2024/01/30/crosspay/",
   },
-
+  {
+    name: "CodeSandBox-lite",
+    github: "https://github.com/Keyur-Gondaliya/codedamn-lite",
+    thumbnail: "codesandbox-lite.png",
+    des: "Cloud base Sandbox environment for various frameworks and languages powered by Docker Containers. ",
+    stack: [
+      { link: "stack/next.svg", alt: "next" },
+      { link: "stack/node.svg", alt: "node" },
+      { link: "stack/ex.svg", alt: "express" },
+      { link: "stack/mongo.svg", alt: "mongodb" },
+      { link: "stack/ts.svg", alt: "ts" },
+      { link: "stack/aws.svg", alt: "aws" },
+      { link: "stack/docker.png", alt: "docker" },
+    ],
+    tags: ["Software Development"],
+    link: "https://gkcodes.wordpress.com/2024/05/20/codesandbox-lite/",
+  },
   {
     name: "DuoSync-Call",
     github: "https://github.com/Keyur-Gondaliya/DuoSync-Call",
