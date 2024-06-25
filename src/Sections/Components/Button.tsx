@@ -21,7 +21,7 @@ const Button = ({
 }: Props) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none ${
+      className={`flex justify-center items-center gap-2 px-3 md:px-7 py-2.5 md:py-4 font-montserrat text:xs md:text-lg leading-none font-medium ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor} border-2`
           : "bg-coral-red  text-white border-coral-red"
@@ -31,7 +31,11 @@ const Button = ({
     >
       {label}
       {iconUrl ? (
-        <img src={iconUrl} alt="btn-Icon" className="ml-2 w-5 h-5" />
+        <img
+          src={iconUrl}
+          alt="btn-Icon"
+          className="ml-1 md:ml-2 w-4 h-4 md:w-5 md:h-5"
+        />
       ) : null}
     </button>
   );

@@ -18,7 +18,7 @@ const ProjectCard = ({ data }: Props) => {
           style={{ height: "230px", width: "100%" }}
         />
         <div className="h-full w-full bg-[#0000008a] rounded-t-lg p-5 opacity-0 hover:opacity-100 absolute top-0 transition ease-in delay-150  ">
-          <div className="flex gap-3 justify-center h-full items-center ">
+          <div className="flex gap-3 justify-center h-full items-center flex-wrap content-center ">
             {data.stack.map((e: any, i: number) => (
               <img
                 src={e.link}

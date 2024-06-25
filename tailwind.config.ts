@@ -17,6 +17,7 @@ const config: Config = {
       "2xl": ["24px", "29.26px"],
       "3xl": ["28px", "50px"],
       "4xl": ["48px", "58px"],
+      "5xl": ["56px", "66px"],
       "8xl": ["96px", "106px"],
     },
     extend: {

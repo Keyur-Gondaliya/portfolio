@@ -4,9 +4,9 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <section id="products" className="max-container max-sm:mt-12">
+    <section id="products" className="max-container">
       <div className="flex flex-col justify-start gap-5">
-        <h2 className="text-4xl font-palanquin font-bold  text-white-400">
+        <h2 className="text-3xl md:text-4xl font-palanquin font-bold  text-white-400">
           Skills
         </h2>
         <div className="flex flex-wrap gap-2">

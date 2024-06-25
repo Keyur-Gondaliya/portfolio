@@ -12,22 +12,22 @@ import Skills from "@/Sections/Skills";
 export default function Home() {
   return (
     <main className="relative">
-      <section className="absolute h-full w-full">
+      <section className="absolute h-full w-full hidden md:block">
         <Navbar />
       </section>
-      <section className="xl:padding-l padding-x wide:padding-r padding-b bg-[#1B1B1B]">
+      <section className="md:padding-x pb-5 md:pb-10 bg-[#1B1B1B]">
         <HeroSection />
       </section>
-      <section className="padding-x pb-10 pt-1  bg-[#1B1B1B]">
+      <section className="padding-x py-10 pt-1 md:py-10 bg-[#1B1B1B]">
         <AboutMe />
       </section>
-      <section className="padding-x py-10  bg-[#1B1B1B]">
+      <section className="padding-x py-5 md:py-10  bg-[#1B1B1B]">
         <Skills />
       </section>
-      <section className="padding-x py-10 bg-[#1B1B1B]">
+      <section className="padding-x py-5 md:py-10 bg-[#1B1B1B]">
         <Projects />
       </section>
-      <section className="padding-x py-10  bg-[#1B1B1B]">
+      <section className="padding-x py-5 md:py-10  bg-[#1B1B1B]">
         <Experinces />
       </section>
       <section className="padding-x pt-10 w-full bg-[#1B1B1B]">
