@@ -27,10 +27,10 @@ const Experinces = (props: Props) => {
               </div>
 
               <div className="text-[#b2b2b2] my-2 text-justify">
-                - In my current role, I've rapidly advanced from managing admin
-                panels to overseeing multiple client-side projects. My growth is
-                marked by independently managing entire initiatives with
-                increasing proficiency.
+                - In my current role, I&apos;ve rapidly advanced from managing
+                admin panels to overseeing multiple client-side projects. My
+                growth is marked by independently managing entire initiatives
+                with increasing proficiency.
               </div>
               <div className="text-[#b2b2b2] my-2 text-justify">
                 - Operating within Agile and Scrum frameworks, I led projects
