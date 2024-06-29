@@ -15,7 +15,7 @@ export default function Home() {
       <section className="absolute h-full w-full hidden md:block">
         <Navbar />
       </section>
-      <section className="md:padding-x pb-5 md:pb-10 bg-[#1B1B1B]">
+      <section className=" pb-5 md:pb-10 bg-[#1B1B1B]">
         <HeroSection />
       </section>
       <section className="padding-x py-10 pt-1 md:py-10 bg-[#1B1B1B]">

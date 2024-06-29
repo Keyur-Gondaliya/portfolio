@@ -7,7 +7,7 @@ const HeroSection = (props: Props) => {
   return (
     <section
       id="home"
-      className="max-container h-[60vh] lg:min-h-screen w-full relative"
+      className="max-container py-5 max-md:min-h-[60vh] lg:h-screen 2xl:h-[800px] w-full relative"
       style={{ backgroundImage: "url('/bg3.jpg')", backgroundSize: "cover" }}
     >
       <div className="relative  flex flex-col justify-center items-start lg:justify-end lg:pb-14 w-full padding-x h-full">
