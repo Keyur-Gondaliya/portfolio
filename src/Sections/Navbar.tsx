@@ -1,3 +1,4 @@
+"use client";
 import { navLinks } from "@/Constants";
 import { useCallback, useEffect, useRef, useState } from "react";
 

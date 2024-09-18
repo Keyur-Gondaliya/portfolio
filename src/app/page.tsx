@@ -1,5 +1,3 @@
-"use client";
-
 import AboutMe from "@/Sections/AboutMe";
 import Blogs from "@/Sections/Blogs";
 import Experinces from "@/Sections/Experince";
