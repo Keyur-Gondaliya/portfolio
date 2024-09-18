@@ -113,7 +113,7 @@ const list: Page[] = [
     },
   },
   {
-    title: "Streamlining Inventory and Restaurant Tech",
+    title: "Streamlining Inventory & Restaurant Tech",
     triangle: "/building2.avif",
     bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
     imageSrc: "/bg.png",
@@ -172,6 +172,7 @@ const HeroSection: React.FC = () => {
         "fadeOutRightBig",
       ].forEach((animation) => {
         page.querySelector(".content")?.classList.remove(animation);
+        page.querySelector(".action-btn")?.classList.remove(animation);
         page.querySelector(".tri-container")?.classList.remove(animation);
         page.querySelector(".image")?.classList.remove(animation);
       });
@@ -200,6 +201,9 @@ const HeroSection: React.FC = () => {
             .querySelector(".content")
             ?.classList.add(textAnimation[1]);
           previousPage
+            .querySelector(".action-btn")
+            ?.classList.add(textAnimation[1]);
+          previousPage
             .querySelector(".tri-container")
             ?.classList.add(imageAnimation[1]);
         }
@@ -216,6 +220,9 @@ const HeroSection: React.FC = () => {
             ref.current.classList.add("fadeIn");
 
             nextPage.querySelector(".content")?.classList.add(textAnimation[0]);
+            nextPage
+              .querySelector(".action-btn")
+              ?.classList.add(textAnimation[0]);
             nextPage
               .querySelector(".tri-container")
               ?.classList.add(imageAnimation[0]);
@@ -239,7 +246,7 @@ const HeroSection: React.FC = () => {
   }, [currentPageIndex, showPage]);
 
   useEffect(() => {
-    const interval = setInterval(nextPage, 7000);
+    const interval = setInterval(nextPage, 700000);
     return () => clearInterval(interval);
   }, [nextPage]);
 
@@ -268,6 +275,9 @@ const HeroSection: React.FC = () => {
               .querySelector(".content")
               ?.classList.add(textAnimation[0]);
             nextPageElement
+              .querySelector(".action-btn")
+              ?.classList.add(textAnimation[0]);
+            nextPageElement
               .querySelector(".tri-container")
               ?.classList.add(imageAnimation[0]);
 
@@ -279,51 +289,23 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="home">
-      <div ref={ref} className="w-full h-screen bg-black flex justify-center">
+    <section id="home" className="bg-black ">
+      <div
+        ref={ref}
+        className="w-full h-screen max-container md:padding-x flex justify-center "
+      >
         {list.map((page, index) => (
           <div
             key={index}
-            className={`page ${
+            className={`page  ${
               index === currentPageIndex ? "active" : ""
-            } h-full flex flex-col items-center max-w-[900px]`}
+            } h-full flex flex-col items-center  lg:max-w-[900px]`}
           >
             <div className="content-container h-[80%] p-5">
               <div className="content w-1/2">
                 <h1 className="text-white-400 text-left text-[clamp(25px,8vw,70px)]">
                   {page.title}
                 </h1>
-
-                <div className="flex justify-between absolute max-w-[900px] w-full">
-                  <div className="button-container mt-4 flex gap-4 relative">
-                    {staticData.buttons.map((btn, i) => (
-                      <button
-                        key={i}
-                        className={`btn-${btn.variant} px-5 py-2 rounded-full border-2 text-white-400`}
-                        style={{ borderColor: page.color.min }}
-                        onClick={() => {
-                          if (i === 0) {
-                            window.location.href =
-                              "mailto:keyurgondaliya403@gmail.com";
-                          } else if (i === 1) {
-                            window.location.href = "#projects";
-                          }
-                        }}
-                      >
-                        {btn.text}
-                      </button>
-                    ))}
-                  </div>
-
-                  <div className="slider-buttons relative flex flex-col justify-between text-white-400">
-                    <div onClick={prevPage} className="cursor-pointer">
-                      PREV
-                    </div>
-                    <div onClick={nextPage} className="cursor-pointer">
-                      NEXT
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="tri-container w-1/2">
@@ -335,6 +317,61 @@ const HeroSection: React.FC = () => {
                   // className="tri"
                   style={{ height: "100%", width: "100%" }}
                 />
+              </div>
+              <div className="absolute left-0 h-full flex flex-col justify-evenly  w-full p-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div className="flex justify-between w-full">
+                  <div className="flex justify-between action-btn">
+                    <div className="button-container mt-4 flex gap-4 relative">
+                      {staticData.buttons.map((btn, i) => (
+                        <button
+                          key={i}
+                          className={`btn-${btn.variant} px-5 py-2 rounded-full border-2 text-white relative transition-all duration-500 ease-in-out`}
+                          style={{
+                            borderColor: page.color.min,
+                            color: "rgba(255, 255, 255, 0.8)",
+                          }}
+                          onClick={() => {
+                            if (i === 0) {
+                              window.location.href =
+                                "mailto:keyurgondaliya403@gmail.com";
+                            } else if (i === 1) {
+                              window.location.href = "#projects";
+                            }
+                          }}
+                          onMouseEnter={(e) => {
+                            const target = e.target as HTMLElement;
+                            target.style.backgroundColor = page.color.min;
+                            target.style.color = "#fff";
+                          }}
+                          onMouseLeave={(e) => {
+                            const target = e.target as HTMLElement;
+                            target.style.backgroundColor = "transparent";
+                            target.style.color = "rgba(255, 255, 255, 0.8)";
+                          }}
+                        >
+                          {btn.text}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="slider-buttons flex flex-col justify-between text-white-400   px-5">
+                    <div
+                      onClick={prevPage}
+                      className="cursor-pointer hover:text-white"
+                    >
+                      PREV
+                    </div>
+                    <div
+                      onClick={nextPage}
+                      className="cursor-pointer hover:text-white"
+                    >
+                      NEXT
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -353,7 +390,7 @@ const HeroSection: React.FC = () => {
                   borderRight: "1px solid rgba(255, 255, 255, 0.2)",
                 }}
               >
-                <p className="text-base  font-light leading-relaxed">
+                <p className="text-base  font-light leading-relaxed text-white-400">
                   Dedicated to Crafting Solutions with Unwavering Commitment to
                   Excellence.
                 </p>
@@ -363,7 +400,7 @@ const HeroSection: React.FC = () => {
               </div>
 
               <div className="flex flex-col justify-between text-center">
-                <p className="text-sm lg:text-base text-white/60 text-center mt-2">
+                <p className="text-sm lg:text-base text-white/60 text-center mb-2">
                   Contact Info
                 </p>
                 <div className="flex gap-4 items-center justify-center">
@@ -373,7 +410,7 @@ const HeroSection: React.FC = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="transition-transform hover:scale-110"
+                      className="transition-transform hover:scale-110 cursor-pointer"
                     >
                       <Image
                         src={link.icon}

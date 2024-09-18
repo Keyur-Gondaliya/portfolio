@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
   }, []);
   return (
     <header className="padding-x sticky top-0 py-6  z-10 ">
-      <nav className="flex justify-between items-center max-container w-fit">
+      <nav className="flex justify-between items-center max-container w-fit ">
         <ul
           className="flex-1 flex justify-center items-center gap-16 max-lg:hidden rounded-full  px-8 py-3 text-gray-300"
           id="navList"
