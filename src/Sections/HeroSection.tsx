@@ -299,32 +299,13 @@ const HeroSection: React.FC = () => {
             key={index}
             className={`page  ${
               index === currentPageIndex ? "active" : ""
-            } h-full flex flex-col items-center  lg:max-w-[900px]`}
+            } h-full flex md:flex-col items-center  lg:max-w-[900px]`}
           >
-            <div className="content-container h-[80%] p-5">
-              <div className="content w-1/2">
-                <h1 className="text-white-400 text-left text-[clamp(25px,8vw,70px)]">
-                  {page.title}
-                </h1>
-              </div>
-
-              <div className="tri-container w-1/2">
-                <Image
-                  src={page.triangle}
-                  alt={`triangle${index + 1}`}
-                  width={100}
-                  height={100}
-                  // className="tri"
-                  style={{ height: "100%", width: "100%" }}
-                />
-              </div>
-              <div className="absolute left-0 h-full flex flex-col justify-evenly  w-full p-5">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div className="flex justify-between w-full">
+            <div className="flex flex-col-reverse md:flex-row  content-container h-[80%] p-5">
+              <div className="relative md:hidden left-0 flex-col justify-end w-full">
+                <div className="flex justify-between items-center w-full  mt-4">
                   <div className="flex justify-between action-btn">
-                    <div className="button-container mt-4 flex gap-4 relative">
+                    <div className="button-container flex gap-2 relative">
                       {staticData.buttons.map((btn, i) => (
                         <button
                           key={i}
@@ -357,7 +338,79 @@ const HeroSection: React.FC = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="slider-buttons flex flex-col justify-between text-white-400   px-5">
+                  <div className="slider-buttons flex flex-col justify-between text-white-400   pl-5 gap-2.5">
+                    <div
+                      onClick={prevPage}
+                      className="cursor-pointer hover:text-white"
+                    >
+                      PREV
+                    </div>
+                    <div
+                      onClick={nextPage}
+                      className="cursor-pointer hover:text-white"
+                    >
+                      NEXT
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content w-full md:w-1/2">
+                <h1 className="text-white-400 text-left text-[clamp(25px,8vw,70px)]">
+                  {page.title}
+                </h1>
+              </div>
+
+              <div className="tri-container w-full md:w-1/2">
+                <Image
+                  src={page.triangle}
+                  alt={`triangle${index + 1}`}
+                  width={100}
+                  height={100}
+                  // className="tri"
+                  style={{ height: "100%", width: "100%" }}
+                />
+              </div>
+              <div className="hidden md:flex absolute left-0 h-full  flex-col justify-evenly  w-full p-5">
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div className="flex justify-between items-center w-full  mt-4">
+                  <div className="flex justify-between action-btn">
+                    <div className="button-container flex gap-2 md:gap-4 relative">
+                      {staticData.buttons.map((btn, i) => (
+                        <button
+                          key={i}
+                          className={`btn-${btn.variant} px-5 py-2 rounded-full border-2 text-white relative transition-all duration-500 ease-in-out`}
+                          style={{
+                            borderColor: page.color.min,
+                            color: "rgba(255, 255, 255, 0.8)",
+                          }}
+                          onClick={() => {
+                            if (i === 0) {
+                              window.location.href =
+                                "mailto:keyurgondaliya403@gmail.com";
+                            } else if (i === 1) {
+                              window.location.href = "#projects";
+                            }
+                          }}
+                          onMouseEnter={(e) => {
+                            const target = e.target as HTMLElement;
+                            target.style.backgroundColor = page.color.min;
+                            target.style.color = "#fff";
+                          }}
+                          onMouseLeave={(e) => {
+                            const target = e.target as HTMLElement;
+                            target.style.backgroundColor = "transparent";
+                            target.style.color = "rgba(255, 255, 255, 0.8)";
+                          }}
+                        >
+                          {btn.text}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="slider-buttons flex flex-col justify-between text-white-400   px-5 gap-2.5">
                     <div
                       onClick={prevPage}
                       className="cursor-pointer hover:text-white"

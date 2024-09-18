@@ -7,9 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title:
     "Keyur Gondaliya - Full Stack Developer | AI, MERN, React Native, Electron, Cloud Expert",
-  icons: {
-    icon: "/logo.ico",
-  },
   description:
     "Keyur Gondaliya is a full-stack developer with expertise in MERN, React Native, Electron, Azure, GCP, AWS, and a deep focus on AI, LLM APIs, and AI agents like Langchain, Hugging Face, and Crew AI. Experienced in real estate, fintech, CAD, ed-tech, big data, and more.",
   keywords:
@@ -39,6 +36,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo.ico" sizes="any" />
+
       <body className={inter.className}>{children}</body>
     </html>
   );
