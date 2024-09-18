@@ -143,7 +143,7 @@ const staticData = {
     },
 
     {
-      title: "Contact",
+      title: "Contact Info",
     },
   ],
   buttons: [
@@ -239,7 +239,7 @@ const HeroSection: React.FC = () => {
   }, [currentPageIndex, showPage]);
 
   useEffect(() => {
-    const interval = setInterval(nextPage, 5000);
+    const interval = setInterval(nextPage, 7000);
     return () => clearInterval(interval);
   }, [nextPage]);
 
@@ -363,7 +363,9 @@ const HeroSection: React.FC = () => {
               </div>
 
               <div className="flex flex-col justify-between text-center">
-                <h2 className="text-lg font-semibold mb-4 md:mb-0">Contact</h2>
+                <p className="text-sm lg:text-base text-white/60 text-center mt-2">
+                  Contact Info
+                </p>
                 <div className="flex gap-4 items-center justify-center">
                   {socialLinks.map((link) => (
                     <Link
