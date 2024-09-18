@@ -3,7 +3,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <footer className="max-container w-full bottom-0 " id="contact-me">
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col-reverse max-sm:gap-3 max-sm:items-center border-t border-[#2d2d2d] pt-10">
+      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col-reverse max-sm:gap-3 max-sm:items-center border-t border-[#2d2d2d] pt-6">
         <div className="flex flex-1 justify-start items-center gap-2 font-montserrat">
           <img
             src="copyright-sign.svg"
@@ -45,6 +45,14 @@ const Footer = (props: Props) => {
             className="cursor-pointer"
           >
             <img src="reddit.svg" alt="reddit" width={20} height={20} />
+          </a>
+          <a
+            href="mailto:keyurgondaliya403@gmail.com"
+            target="_blank"
+            title="email"
+            className="cursor-pointer"
+          >
+            <img src="email.svg" alt="Emil" width={20} height={20} />
           </a>
         </div>
       </div>

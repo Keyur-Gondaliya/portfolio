@@ -79,6 +79,11 @@ const socialLinks: SocialLink[] = [
     icon: "/reddit.svg",
     alt: "Reddit",
   },
+  {
+    href: "mailto:keyurgondaliya403@gmail.com",
+    icon: "/email.svg",
+    alt: "Email",
+  },
 ];
 interface Page {
   title: string;
@@ -246,7 +251,7 @@ const HeroSection: React.FC = () => {
   }, [currentPageIndex, showPage]);
 
   useEffect(() => {
-    const interval = setInterval(nextPage, 700000);
+    const interval = setInterval(nextPage, 7000);
     return () => clearInterval(interval);
   }, [nextPage]);
 
@@ -389,7 +394,7 @@ const HeroSection: React.FC = () => {
                           onClick={() => {
                             if (i === 0) {
                               window.location.href =
-                                "mailto:keyurgondaliya403@gmail.com";
+                                socialLinks[socialLinks.length - 1].href;
                             } else if (i === 1) {
                               window.location.href = "#projects";
                             }
