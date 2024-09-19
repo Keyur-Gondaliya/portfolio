@@ -178,6 +178,8 @@ const HeroSection: React.FC = () => {
       ].forEach((animation) => {
         page.querySelector(".content")?.classList.remove(animation);
         page.querySelector(".action-btn")?.classList.remove(animation);
+        page.querySelectorAll(".action-btn")[0]?.classList.remove(animation);
+        page.querySelectorAll(".action-btn")[1]?.classList.remove(animation);
         page.querySelector(".tri-container")?.classList.remove(animation);
         page.querySelector(".image")?.classList.remove(animation);
       });
@@ -206,7 +208,10 @@ const HeroSection: React.FC = () => {
             .querySelector(".content")
             ?.classList.add(textAnimation[1]);
           previousPage
-            .querySelector(".action-btn")
+            .querySelectorAll(".action-btn")[0]
+            ?.classList.add(textAnimation[1]);
+          previousPage
+            .querySelectorAll(".action-btn")[1]
             ?.classList.add(textAnimation[1]);
           previousPage
             .querySelector(".tri-container")
@@ -226,7 +231,10 @@ const HeroSection: React.FC = () => {
 
             nextPage.querySelector(".content")?.classList.add(textAnimation[0]);
             nextPage
-              .querySelector(".action-btn")
+              .querySelectorAll(".action-btn")[0]
+              ?.classList.add(textAnimation[0]);
+            nextPage
+              .querySelectorAll(".action-btn")[1]
               ?.classList.add(textAnimation[0]);
             nextPage
               .querySelector(".tri-container")
@@ -280,8 +288,12 @@ const HeroSection: React.FC = () => {
               .querySelector(".content")
               ?.classList.add(textAnimation[0]);
             nextPageElement
-              .querySelector(".action-btn")
+              .querySelectorAll(".action-btn")[0]
               ?.classList.add(textAnimation[0]);
+            nextPageElement
+              .querySelectorAll(".action-btn")[1]
+              ?.classList.add(textAnimation[0]);
+
             nextPageElement
               .querySelector(".tri-container")
               ?.classList.add(imageAnimation[0]);
