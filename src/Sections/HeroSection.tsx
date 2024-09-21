@@ -94,11 +94,13 @@ interface Page {
     min: string;
     max: string;
   };
+  heading: string;
 }
 
 const list: Page[] = [
   {
-    title: "Scalable Solutions for Complex Markets",
+    title: "You Dream It,<br/> I Deliver It.<br/> Fast, with AI.",
+    heading: "",
     triangle: "/building.avif",
     bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
     imageSrc: "/bg.png",
@@ -108,7 +110,8 @@ const list: Page[] = [
     },
   },
   {
-    title: "AI-Powered Systems with Langchain",
+    title: "AI Agents,<br/> RAG, LLMs, <br/>Real-Time AI.",
+    heading: "Focused on",
     triangle: "/building1.avif",
     bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
     imageSrc: "/bg.png",
@@ -117,24 +120,27 @@ const list: Page[] = [
       max: "#57D1EF",
     },
   },
+
   {
-    title: "Streamlining Inventory & Restaurant Tech",
-    triangle: "/building2.avif",
-    bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
-    imageSrc: "/bg.png",
-    color: {
-      min: "#AC32E4",
-      max: "#7C19F1",
-    },
-  },
-  {
-    title: "Smart Infrastructure for Real Estate",
+    title: "Secure,<br/> Scalable,<br/> Micro/Monolith.",
+    heading: "Backend that's",
     triangle: "/building3.avif",
     bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
     imageSrc: "/bg.png",
     color: {
       min: "#FDD6BD",
       max: "#F9A3AA",
+    },
+  },
+  {
+    title: "Responsive,<br/> User Friendly,<br/> SEO Optimized.",
+    heading: "Frontend that's",
+    triangle: "/building2.avif",
+    bgColor: "bg-gradient-to-b from-gray-900 to-gray-700",
+    imageSrc: "/bg.png",
+    color: {
+      min: "#AC32E4",
+      max: "#7C19F1",
     },
   },
 ];
@@ -259,7 +265,7 @@ const HeroSection: React.FC = () => {
   }, [currentPageIndex, showPage]);
 
   useEffect(() => {
-    const interval = setInterval(nextPage, 7000);
+    const interval = setInterval(nextPage, 700000);
     return () => clearInterval(interval);
   }, [nextPage]);
 
@@ -309,14 +315,14 @@ const HeroSection: React.FC = () => {
     <section id="home" className="bg-black ">
       <div
         ref={ref}
-        className="w-full h-screen max-container md:padding-x flex justify-center "
+        className="w-full h-[calc(100dvh)] max-container md:padding-x flex justify-center "
       >
         {list.map((page, index) => (
           <div
             key={index}
             className={`page  ${
               index === currentPageIndex ? "active" : ""
-            } h-full flex md:flex-col items-center  lg:max-w-[900px]`}
+            } h-full flex md:flex-col items-center  lg:max-w-[900px] w-full`}
           >
             <div className="flex flex-col-reverse md:flex-row  content-container h-[80%] p-5">
               <div className="relative md:hidden left-0 flex-col justify-end w-full">
@@ -372,9 +378,14 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
               <div className="content w-full md:w-1/2">
-                <h1 className="text-white-400 text-left text-[clamp(25px,8vw,70px)]">
-                  {page.title}
-                </h1>
+                <div className="text-white/60 text-sm md:text-lg">
+                  {page.heading}
+                  <br />
+                </div>
+                <h1
+                  className="text-white-400 text-left text-[clamp(25px,8vw,40px)] md:text-[clamp(25px,8vw,40px)] lg:text-[clamp(25px,8vw,55px)]"
+                  dangerouslySetInnerHTML={{ __html: page.title }}
+                ></h1>
               </div>
 
               <div className="tri-container w-full md:w-1/2">
@@ -389,8 +400,8 @@ const HeroSection: React.FC = () => {
               </div>
               <div className="hidden md:flex absolute left-0 h-full  flex-col justify-evenly  w-full p-5">
                 <div></div>
-                <div></div>
-                <div></div>
+                <div className="hidden lg:block"></div>
+                <div className="hidden lg:block"></div>
 
                 <div className="flex justify-between items-center w-full  mt-4">
                   <div className="flex justify-between action-btn">
