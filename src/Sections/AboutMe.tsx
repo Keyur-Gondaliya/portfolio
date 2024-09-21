@@ -14,17 +14,20 @@ export default function Component() {
     {
       icon: <GraduationCap className="w-6 h-6" />,
       title: "Computer Science Graduate",
-      description: "Foundation in technology and problem-solving",
+      description:
+        "Strong foundation in software development and AI technologies.",
     },
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full Stack Developer",
-      description: "Expertise in MERN stack and Next.js",
+      title: "Full Stack Developer (MERN)",
+      description:
+        "Expert in MongoDB/Postgres, Express, React/Next, Node, Python and AI-driven solutions.",
     },
     {
       icon: <Briefcase className="w-6 h-6" />,
-      title: "3+ Years Experience",
-      description: "Tackling real-world problems across various sectors",
+      title: "3+ Years of Industry Experience",
+      description:
+        "Proven track record of delivering scalable web applications across diverse industries.",
     },
   ];
   const ref = useRef(null);
@@ -68,10 +71,11 @@ export default function Component() {
           exit={{ opacity: 0, x: -100 }}
         >
           <p className="text-gray-400 mb-4">
-            Believer in the mantra &quot;The only time success comes before work
-            is in the dictionary,&quot; I am Keyur Gondaliya. My journey in
-            technology began with writing my first HTML code in the 9th grade,
-            igniting a passion that has driven my career ever since.
+            As a passionate Full Stack Developer specializing in the MERN stack,
+            I have extensive experience working with AI-agent integration and
+            Retrieval-Augmented Generation (RAG) systems. My name is Keyur
+            Gondaliya, and my journey in technology began in my early years with
+            a deep love for coding.
           </p>
           <div
             className={`overflow-hidden transition-all duration-300 ${
@@ -79,16 +83,19 @@ export default function Component() {
             }`}
           >
             <p className="text-gray-400 mb-4">
-              From personal projects to managing large-scale initiatives,
-              I&apos;ve honed my skills across various domains including
-              fintech, real estate, and inventory management. My approach
-              combines technical expertise with a keen eye for solving
-              real-world problems.
+              Throughout my career, I&apos;ve developed full-stack applications
+              that combine cutting-edge AI models, from chatbots to advanced
+              data processing pipelines. I’ve worked on a range of industry
+              projects, including fintech solutions, e-commerce platforms, and
+              AI-driven systems using RAG techniques to optimize business
+              processes.
             </p>
             <p className="text-gray-400">
-              Currently, I lead projects end-to-end, leveraging my full-stack
-              development skills and project management experience to deliver
-              impactful solutions.
+              Whether it&apos;s building scalable web applications with
+              Next/React and Node, integrating AI models, or implementing cloud
+              solutions, I bring both technical expertise and strategic thinking
+              to every project. Let&apos;s work together to turn your ideas into
+              reality.
             </p>
           </div>
           <button

@@ -16,7 +16,7 @@ const skillCategories: SkillCategory[] = [
     name: "Frontend",
     skills: [
       { name: "React" },
-      { name: "Next.js" },
+      { name: "Next" },
       { name: "TypeScript" },
       { name: "Tailwind CSS" },
       { name: "Redux" },
@@ -25,20 +25,11 @@ const skillCategories: SkillCategory[] = [
   {
     name: "Backend",
     skills: [
-      { name: "Node.js" },
+      { name: "Node" },
       { name: "Express" },
       { name: "MongoDB" },
       { name: "GraphQL" },
       { name: "Python" },
-    ],
-  },
-  {
-    name: "DevOps",
-    skills: [
-      { name: "Docker" },
-      { name: "AWS" },
-      { name: "CI/CD" },
-      { name: "Kubernetes" },
     ],
   },
   {
@@ -48,6 +39,15 @@ const skillCategories: SkillCategory[] = [
       { name: "Crew AI" },
       { name: "Hugging Face" },
       { name: "LLM API" },
+    ],
+  },
+  {
+    name: "DevOps",
+    skills: [
+      { name: "Docker" },
+      { name: "AWS/GCP/Azure" },
+      { name: "CI/CD" },
+      { name: "Nginx" },
     ],
   },
 ];

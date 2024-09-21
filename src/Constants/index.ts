@@ -352,35 +352,33 @@ export const projectList = [
     link: "https://wordpress.com/post/gkcodes.wordpress.com/229",
   },
 ];
-
 export const blogList = [
   {
     link: "https://gkcodes.wordpress.com/2024/09/15/production-ready-rag-and-ai-agents/",
     name: "Production Ready RAG and AI Agents",
     time: 2,
-    des: "Explore production-ready RAG systems and AI agents for advanced automation.",
+    des: "Discover how RAG systems and AI agents can revolutionize production environments.",
     date: "Sep 15, 2024",
   },
-
   {
     link: "https://gkcodes.wordpress.com/2024/01/30/react-app-performance-optimization/",
     name: "Next App Performance Optimization",
     time: 4,
-    des: "React to excellence: Optimize speed, elevate performance, captivate users.",
+    des: "Boost your Next.js app with techniques for superior performance and speed.",
     date: "Jan 01, 2024",
   },
   {
     link: "https://gkcodes.wordpress.com/2024/01/30/reconciliation/",
     name: "Backend Scaling with Kafka",
     time: 2,
-    des: "Harmony in Diversity, Unity in Differences: Embrace the Power of Reconciliation",
+    des: "Scale backend systems efficiently using Apache Kafka for data streaming.",
     date: "Jan 01, 2024",
   },
   {
     link: "https://gkcodes.wordpress.com/2024/01/30/containerization/",
     name: "Containerization (Docker + k8s)",
     time: 4,
-    des: "Elfficiency sealed, innovation unleashed, boundaries shattered.",
+    des: "Leverage Docker and Kubernetes for scalable and flexible containerized applications.",
     date: "Jan 01, 2024",
   },
 ];
