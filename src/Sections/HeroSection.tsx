@@ -265,7 +265,7 @@ const HeroSection: React.FC = () => {
   }, [currentPageIndex, showPage]);
 
   useEffect(() => {
-    const interval = setInterval(nextPage, 700000);
+    const interval = setInterval(nextPage, 7000);
     return () => clearInterval(interval);
   }, [nextPage]);
 
@@ -383,7 +383,7 @@ const HeroSection: React.FC = () => {
                   <br />
                 </div>
                 <h1
-                  className="text-white-400 text-left text-[clamp(25px,8vw,40px)] md:text-[clamp(25px,8vw,40px)] lg:text-[clamp(25px,8vw,55px)]"
+                  className="text-white-400 text-left text-[clamp(25px,8vw,35px)] md:text-[clamp(25px,8vw,40px)] lg:text-[clamp(25px,8vw,55px)]"
                   dangerouslySetInnerHTML={{ __html: page.title }}
                 ></h1>
               </div>

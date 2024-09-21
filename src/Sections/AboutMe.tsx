@@ -23,7 +23,7 @@ export default function Component() {
     },
     {
       icon: <Briefcase className="w-6 h-6" />,
-      title: "4+ Years Experience",
+      title: "3+ Years Experience",
       description: "Tackling real-world problems across various sectors",
     },
   ];
