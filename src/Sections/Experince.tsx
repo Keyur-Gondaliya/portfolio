@@ -49,15 +49,28 @@ const Experiences: React.FC = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
+        {/* <ExperienceItem
+          date="June 2024 - Present"
+          company="Marsdevs"
+          position="Full Stack Engineer"
+          website="https://www.marsdevs.com/"
+          description={[
+            "As a Full Stack Engineer, I managed both client-side and admin panel projects using MERN stack technologies. Successfully led end-to-end project development across diverse industries, driving efficient solutions.",
+            "Led Agile and Scrum-driven projects, from planning to delivery, ensuring timely execution. Coordinated with clients, teams, and freelancers, conducting weekly client meetings to discuss project milestones.",
+            "Specialized in developing scalable applications using MongoDB, Express.js, React, and Node.js, showcasing leadership and technical adaptability in a fast-paced environment.",
+          ]}
+          skills={tySkillList}
+          variants={itemVariants}
+        /> */}
         <ExperienceItem
           date="Mar 2022 - Feb 2024"
           company="Technoyuga Pvt. Ltd"
           position="Full Stack Engineer"
           website="https://technoyuga.com/"
           description={[
-            "In my current role, I've rapidly advanced from managing admin panels to overseeing multiple client-side projects. My growth is marked by independently managing entire initiatives with increasing proficiency.",
-            "Operating within Agile and Scrum frameworks, I led projects from inception to completion. I collaborated seamlessly with clients, internal teams, and freelancers, and took charge of weekly client meetings, driving key project discussions.",
-            "My expertise in implementing MERN technologies across various industries showcases my adaptability and leadership, consistently delivering results in fast-paced, collaborative settings.",
+            "Developed a productivity analysis platform using custom algorithms and third-party integrations, enabling restaurant owners to track attendance with 30% more accuracy and distribute bonuses 25% more fairly.",
+            "Enhanced a Zoho-based inventory system by integrating Authorization-Based UI access, custom APIs, and fast-loading forms. Delivered an advanced front-end with personalized color themes, elevating user experience and boosting operational efficiency.",
+            "Specializing in scalable solutions across industries, I led projects from concept to delivery using the MERN stack (MongoDB, Express.js, React, Node.js). From restaurant platforms to SaaS solutions, I ensure clients' goals are met with precision and technical expertise.",
           ]}
           skills={tySkillList}
           variants={itemVariants}
@@ -66,24 +79,14 @@ const Experiences: React.FC = () => {
         <ExperienceItem
           date="Sep 2020 - Feb 2022"
           company="Buyerz"
-          position="Co-Founder Full-stack Developer"
+          position="Co-Founder & Full-Stack Developer"
           website="https://infikeytech.com/"
           description={[
-            "Co-founded and handled all the technical aspects for crunchbase like data filtering platform where optimizing search time for querying from millions of records.",
+            "Co-founded Buyerz, a platform similar to Crunchbase, tailored to the Indian Chemical Industry. Led the migration of a trusted dataset, successfully onboarding 7 paying companies.",
+            "Enhanced platform sales by 30% through strategic analysis of competitor platforms and regular user feedback.",
+            "Integrated payment platforms and developed fast-search capabilities for millions of records, optimized with caching to deliver a 48% improvement in user experience.",
           ]}
           skills={coFounderSkillList}
-          variants={itemVariants}
-        />
-
-        <ExperienceItem
-          date="Feb 2021 & June 2021"
-          company="Infikey Technologies & TwoWaits Private Limited"
-          position="Web Developer Intern"
-          website="https://infikeytech.com/"
-          description={[
-            "During my internship, I honed my skills in MERN (MongoDB, Express.js, React, Node.js) stack by developing various types of Todo applications. Through consistent practice, I strengthened my proficiency in MERN, emphasizing clean code practices. Additionally, I explored Laravel 8 and successfully implemented a chatbot using Botman in the backend.",
-          ]}
-          skills={internSkillList}
           variants={itemVariants}
         />
       </motion.div>
@@ -101,7 +104,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   variants,
 }) => (
   <motion.div
-    className="flex flex-col text-[#b2b2b2] border-l-2 border-coral-red pl-4 py-2"
+    className="relative flex flex-col text-[#b2b2b2] border-l-2 border-coral-red pl-4 py-2"
     variants={variants}
   >
     <div className="text-sm font-semibold mb-2 text-coral-red">{date}</div>

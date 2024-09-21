@@ -324,7 +324,7 @@ const HeroSection: React.FC = () => {
               index === currentPageIndex ? "active" : ""
             } h-full flex md:flex-col items-center  lg:max-w-[900px] w-full`}
           >
-            <div className="flex flex-col-reverse md:flex-row  content-container h-[80%] p-5">
+            <div className="flex flex-col-reverse md:flex-row  content-container h-[85%] md:h-[80%] p-5">
               <div className="relative md:hidden left-0 flex-col justify-end w-full">
                 <div className="flex justify-between items-center w-full  mt-4">
                   <div className="flex justify-between action-btn">
@@ -400,7 +400,6 @@ const HeroSection: React.FC = () => {
               </div>
               <div className="hidden md:flex absolute left-0 h-full  flex-col justify-evenly  w-full p-5">
                 <div></div>
-                <div className="hidden lg:block"></div>
                 <div className="hidden lg:block"></div>
 
                 <div className="flex justify-between items-center w-full  mt-4">
