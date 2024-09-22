@@ -361,14 +361,14 @@ export const blogList = [
     date: "Sep 15, 2024",
   },
   {
-    link: "https://gkcodes.wordpress.com/2024/01/30/react-app-performance-optimization/",
+    link: "https://gkcodes.wordpress.com/2024/01/30/next-app-performance-optimization/",
     name: "Next App Performance Optimization",
     time: 4,
     des: "Boost your Next.js app with techniques for superior performance and speed.",
     date: "Jan 01, 2024",
   },
   {
-    link: "https://gkcodes.wordpress.com/2024/01/30/reconciliation/",
+    link: "https://gkcodes.wordpress.com/2024/01/30/backend-scaling-with-kafka/",
     name: "Backend Scaling with Kafka",
     time: 2,
     des: "Scale backend systems efficiently using Apache Kafka for data streaming.",
