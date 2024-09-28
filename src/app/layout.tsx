@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Keyur Gondaliya - Full Stack Developer | AI, MERN, React Native, Electron, Cloud Expert",
     description:
       "Keyur Gondaliya, an expert in MERN, React Native, Electron, and AI technologies like Langchain, Hugging Face, and Crew AI, offers comprehensive development solutions for real estate, fintech, big data, CAD, and ed-tech industries.",
-    url: "https://keyur-gondaliya.vercel.app/",
+    url: "https://keyur-gondaliya.tech/",
     siteName: "Keyur Gondaliya - Full Stack Developer",
   },
   twitter: {
