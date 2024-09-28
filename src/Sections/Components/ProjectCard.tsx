@@ -15,7 +15,11 @@ const ProjectCard = ({ data }: any) => {
       whileTap={{ scale: 0.98 }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      onClick={() => window.open(data.link, "_blank")}
+      onClick={() => {
+        if (typeof window !== "undefined") {
+          window.open(data.link, "_blank", "noopener,noreferrer");
+        }
+      }}
     >
       <div className="relative overflow-hidden group">
         <motion.img
