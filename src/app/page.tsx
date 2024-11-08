@@ -1,3 +1,4 @@
+"use client";
 import AboutMe from "@/Sections/AboutMe";
 import Blogs from "@/Sections/Blogs";
 import Experinces from "@/Sections/Experince";
@@ -6,10 +7,13 @@ import HeroSection from "@/Sections/HeroSection";
 import Navbar from "@/Sections/Navbar";
 import Projects from "@/Sections/Projects";
 import Skills from "@/Sections/Skills";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function Home() {
   return (
     <main className="relative">
+      <GoogleAnalytics trackPageViews />
+
       <section className="absolute h-full w-full hidden md:block">
         <Navbar />
       </section>
