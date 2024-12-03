@@ -396,6 +396,7 @@ const HeroSection: React.FC = () => {
                   height={100}
                   // className="tri"
                   style={{ height: "100%", width: "100%" }}
+                  loading="eager" // Disables lazy loading
                 />
               </div>
               <div className="hidden md:flex absolute left-0 h-full  flex-col justify-evenly  w-full p-5">

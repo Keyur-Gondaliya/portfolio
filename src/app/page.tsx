@@ -1,4 +1,5 @@
 "use client";
+import GoogleAnalytics from "@/config/GoogleAnalytics";
 import AboutMe from "@/Sections/AboutMe";
 import Blogs from "@/Sections/Blogs";
 import Experinces from "@/Sections/Experince";
@@ -7,12 +8,13 @@ import HeroSection from "@/Sections/HeroSection";
 import Navbar from "@/Sections/Navbar";
 import Projects from "@/Sections/Projects";
 import Skills from "@/Sections/Skills";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function Home() {
   return (
     <main className="relative">
-      <GoogleAnalytics trackPageViews />
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics GA_ID={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
 
       <section className="absolute h-full w-full hidden md:block">
         <Navbar />
