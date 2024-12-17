@@ -171,6 +171,7 @@ const staticData = {
 
 const HeroSection: React.FC = () => {
   const [currentPageIndex, setCurrentPageIndex] = useState<number>(0);
+  const [isInitial, setIsInitial] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
 
   const resetAnimations = useCallback(() => {
@@ -288,6 +289,8 @@ const HeroSection: React.FC = () => {
 
         setTimeout(() => {
           if (nextPageElement) {
+            setIsInitial(false);
+
             nextPageElement.classList.add("active");
 
             nextPageElement
@@ -321,7 +324,7 @@ const HeroSection: React.FC = () => {
           <div
             key={index}
             className={`page  ${
-              index === currentPageIndex ? "active" : ""
+              !isInitial && index === currentPageIndex ? "active" : ""
             } h-full flex md:flex-col items-center  lg:max-w-[900px] w-full`}
           >
             <div className="flex flex-col-reverse md:flex-row  content-container h-[85%] md:h-[80%] p-5">
